@@ -7,7 +7,7 @@ import pandas as pd
 #대시보드 라이브러리
 
 #데이터 읽어오기
-data = pd.read_csv('./globalterror.csv')
+data = pd.read_csv('./data/globalterror.csv')
 
 
 cont_data=None

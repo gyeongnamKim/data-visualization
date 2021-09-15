@@ -3,10 +3,15 @@ import pandas as pd
 import numpy as np
 import googlemaps,json
 #구글 맵스, 서울시 지오 데이터 가져오기
-gmaps = googlemaps.Client(key='google API key')
-geo_data = json.load(open('./02. skorea_municipalities_geo_simple.json', encoding='utf-8'))
+
+#api 키 입력
+gmaps = googlemaps.Client(key='googlemaps API keys')
+#
+
+
+geo_data = json.load(open('../data/02. skorea_municipalities_geo_simple.json', encoding='utf-8'))
 #파일 읽어오기
-graduates_data = pd.read_excel('./2016_middle_shcool_graduates_report.xlsx')
+graduates_data = pd.read_excel('../data/2016_middle_shcool_graduates_report.xlsx')
 del graduates_data['Unnamed: 0']
 
 #구별 진학률 구하기

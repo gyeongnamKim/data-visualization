@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 #파일 읽기
-drink = pd.read_csv('./drinks.csv')
+drink = pd.read_csv('./data/drinks.csv')
 #beer 와 spirit으로 상관계수 구하기
 ex_corr1 = drink[['beer_servings','spirit_servings']]
 corr_result1 = ex_corr1.corr(method='pearson')
